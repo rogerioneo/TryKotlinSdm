@@ -7,6 +7,9 @@ fun main(args: Array<String>) {
     // Imprimir variable
     println(frase)
 
+    // Reatribuindo valor de variável
+    frase = "Hello Rogério!"
+
     // Imprimindo com String Template - Evita concatenação
     println("$frase")
 
@@ -19,5 +22,7 @@ fun main(args: Array<String>) {
     println("Qtd de chars: ${frase.length}")
 
     // Variáveis imutáveis - val (Constante)
+    val fraseVal: String = "Hello, world!"
 
+    println("$fraseVal")
 }
