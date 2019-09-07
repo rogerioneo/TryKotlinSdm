@@ -25,4 +25,8 @@ fun main(args: Array<String>) {
     for (lista in listaInteiros2){
         println(lista)
     }
+
+    //forEach - lambda
+    listaInteiros2.forEach { println(it) }
+    listaInteiros2.forEach { x -> println(x) }
 }
