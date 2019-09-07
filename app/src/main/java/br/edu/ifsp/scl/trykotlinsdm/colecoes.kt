@@ -29,4 +29,35 @@ fun main(args: Array<String>) {
     //forEach - lambda
     listaInteiros2.forEach { println(it) }
     listaInteiros2.forEach { x -> println(x) }
+
+    var aList: ArrayList<String> = ArrayList() // Utiliza o ArrayList do java util
+
+    // lista Mutável
+    val listaCursos: MutableList<String> = mutableListOf("Análise e Desenvolvimento de Sistemas",
+            "Sistemas para Disposistivos Móveis")
+
+    listaCursos.add("Técnico em Informática para Internet")
+
+    listaCursos.forEach { println(it) }
+
+    //listaCursos = MutableListOf() // Erro - porque a referencia não é mutável
+
+    // Set e MutableSet - Não permite itens reptidos
+    val setCursos: MutableSet<String> = mutableSetOf("ADS", "SDM", "TII")
+
+    setCursos.add("ADS") // Não é adicionado, não permite itens reptidos
+    setCursos.add("SDM") // Não é adicionado, não permite itens reptidos
+
+    setCursos.forEach { println(it) }
+
+    // Map e MutableMap
+    val familiaMap: MutableMap<String, String> = mutableMapOf(Pair("Pai", "Rogério"),
+            Pair("Mãe", "Danielli"), Pair("Filho", "Pedro"), Pair("Filho", "Paulo"))
+
+    familiaMap.put("Pet", "Toby")
+    familiaMap.put("Pet", "Amora")
+    familiaMap.put("Pet", "Agata")
+
+    //familiaMap.forEach( println((it)) )
+
 }
