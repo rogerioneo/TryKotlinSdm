@@ -31,8 +31,8 @@ fun <P> List<P>.paraCada(funcao: (P) -> P): List<P> {
 
     return retornoList
 }
-
-fun incrementa(i: Int) = i + 1
+//inline - Copia o que conteudo para quem está chamando
+inline fun incrementa(i: Int) = i + 1
 fun dobra(f: Float) = 2 * f
 
 fun main() {
